@@ -23,4 +23,12 @@ $(function () {
     variableWidth: true
   })
 
+
+  $(".accordion__content").css("display", "none");
+  $(".accordion__title").click(function () {
+    $(".accordion__title").not(this).removeClass("open");
+    $(".accordion__title").not(this).next().slideUp(300);
+    $(this).toggleClass("open");
+    $(this).next().slideToggle(300);
+});
 });

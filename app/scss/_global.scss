@@ -102,10 +102,9 @@ textarea {
 
 .buy-btn {
   display: inline-block;
-  padding: 17px 53px;
+  padding: 18px 54px;
   background-color: var(--accent);
   color: var(--link-color);
-  border: 1px solid var(--white);
   font-weight: 600;
   transition:
     color 0.5s,
@@ -113,9 +112,8 @@ textarea {
     border-color 0.5s ease;
 
   &:hover {
-    background-color: var(--white);
-    border-color: var(--accent);
-    color: var(--accent);
+    background-color: var(--about-line);
+    color: var(--white);
   }
 }
 

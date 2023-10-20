@@ -1,0 +1,53 @@
+.faq {
+  padding: 150px 0;
+
+  &__content {
+    width: 100%;
+  }
+}
+
+.accordion {
+  &__box {
+    padding: 16px 15px;
+    background: #fff;
+    box-shadow: 0px 4px 11px 0px rgba(196, 174, 151, 0.2);
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    @extend %yeseva-400;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url(../images/svg-sprite/sprite.svg#arrow);
+      transition: transform 0.5s ease;
+    }
+
+    &.open {
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__content {
+    padding: 20px 20px 10px;
+
+    li {
+      margin-bottom: 5px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.subscribe {
+  padding: 150px 0 50px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__form-box {
+    max-width: 664px;
+    background-color: var(--white);
+    padding: 75px 42px 67px;
+    box-shadow: 0px 4px 11px 0px rgba(199, 175, 165, 0.3);
+  }
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__inputs {
+    margin-bottom: 52px;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid var(--text);
+
+    &:first-child {
+      margin-bottom: 10px;
+    }
+  }
+}
