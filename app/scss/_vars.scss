@@ -4,8 +4,14 @@ $text: #4b4b4b;
 
 // ! Объявление CSS переменных
 :root {
-  --accent: #ed1c24;
-  --text: #4b4b4b;
+  --accent: #ffbd59;
+  --text: #000;
+  --bg: #a5978e;
+  --num: #bea495;
+  --white: #fafafa;
+  --header-bg: #fff8f3;
+  --link-color: #272727;
+  --about-line: #7b6152;
 }
 // ! Использование CSS переменных
 .link__example {
@@ -58,9 +64,43 @@ $text: #4b4b4b;
 }
 
 // ! Шаблон для Шрифта
-%font-name-400 {
-  font-family: "font-name", sans-serif;
+%comforta-400 {
+  font-family: "Comfortaa-Regular", sans-serif;
+  font-weight: 400;
+}
+
+%comforta-600 {
+  font-family: "Comfortaa-SemiBold", sans-serif;
+  font-weight: 400;
+}
+
+%yeseva-400 {
+  font-family: "YesevaOne-Regular", sans-serif;
   font-weight: 400;
 }
 // ! Использование шаблона
 // @extend %font-name-400;
+
+%decor {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 30px;
+    left: 0;
+    bottom: 0;
+    background-image: url(../images/about/decor.png);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 1000%;
+    height: 1px;
+    left: 22px;
+    bottom: 12px;
+    background-color: var(--about-line);
+  }
+}

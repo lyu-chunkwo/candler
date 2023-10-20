@@ -11,10 +11,10 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
-  @extend %font-name-400;
+  @extend %comforta-400;
   color: $text;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.2;
   min-height: 100%;
   min-width: 320px;
   overflow-x: hidden;
@@ -26,15 +26,27 @@ body {
 
 .main {
   flex-grow: 1;
+  background-color: var(--header-bg);
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1160px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
+.title {
+  font-size: 40px;
+  color: var(--text);
+  @extend %yeseva-400;
+  font-weight: 400;
+}
+
 button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
   &:active,
   &:focus {
     outline: transparent;
@@ -62,16 +74,66 @@ textarea {
   &:focus {
     outline: transparent;
   }
+}
 
-  &:focus {
-    border: 1px solid #9cc0f9;
+.menu {
+  &__btn {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
   }
+
+  &__list {
+    display: flex;
+    gap: 20px;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    color: var(--text);
+    transition: color 0.5s ease;
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+}
+
+.buy-btn {
+  display: inline-block;
+  padding: 17px 53px;
+  background-color: var(--accent);
+  color: var(--link-color);
+  border: 1px solid var(--white);
+  font-weight: 600;
+  transition:
+    color 0.5s,
+    background-color 0.5s,
+    border-color 0.5s ease;
 
   &:hover {
-    border: 1px solid yellow;
+    background-color: var(--white);
+    border-color: var(--accent);
+    color: var(--accent);
   }
+}
 
-  &:active {
-    border: 1px solid yellowgreen;
-  }
+.social {
+  display: flex;
+  gap: 15px;
+}
+
+.section-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-box {
+  max-width: 370px;
+  width: 100%;
+}
+
+.section-title {
+  margin-bottom: 15px;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
 
 <head>
   <meta charset="UTF-8">
@@ -7,7 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="favicon.webp" type="image/x-icon" />
   <link rel="shortcut icon" href="favicon.webp" type="image/x-icon" />
-  <title>New GULP project</title>
+  <title>Candler</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -18,7 +20,15 @@
   </header>
 
   <main class="main">
-
+    @include('partials/top.html')
+    @include('partials/about.html')
+    @include('partials/products.html')
+    @include('partials/stages.html')
+    @include('partials/courses.html')
+    @include('partials/teachers.html')
+    @include('partials/feedback.html')
+    @include('partials/sertificates.html')
+    @include('partials/faq.html')
   </main>
 
   <footer class="footer">
@@ -26,6 +36,8 @@
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 

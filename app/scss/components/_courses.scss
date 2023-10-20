@@ -1,0 +1,50 @@
+.courses {
+  padding-bottom: 150px;
+
+  &__item {
+    width: 261px;
+  }
+
+  &__img-box {
+    position: relative;
+    color: var(--white);
+    text-align-last: left;
+    @extend %yeseva-400;
+  }
+
+  &__text-top {
+    position: absolute;
+    top: 46%;
+    left: 0;
+    font-size: 11px;
+  }
+
+  &__img-text {
+    padding: 15px;
+
+    &:last-child {
+      display: inline-block;
+      margin-bottom: 0;
+      padding: 7px 10px;
+    }
+  }
+
+  &__text-bottom,
+  &__img-text {
+    background-color: var(--num);
+    margin-bottom: 15px;
+  }
+
+  &__text-bottom {
+    position: absolute;
+    padding: 18px 10px;
+    min-width: 85px;
+    display: inline-block;
+    right: -14px;
+    bottom: -28px;
+  }
+
+  &__img {
+    margin-bottom: 28px;
+  }
+}

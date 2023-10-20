@@ -1,0 +1,78 @@
+.feedback,
+.sertificates {
+  padding-top: 150px;
+
+  &__text {
+    margin-right: 20px;
+  }
+
+  &__content {
+    @extend %decor;
+  }
+
+  &__slider {
+    padding-bottom: 110px;
+    width: 760px;
+    overflow: hidden;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0 16px;
+    align-items: center;
+  }
+
+  &__item-video {
+    position: relative;
+  }
+
+  &__item-videobtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__item-content {
+    position: relative;
+  }
+
+  &__instagram-svg {
+    margin-bottom: 12px;
+  }
+
+  &__name {
+    @extend %yeseva-400;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  &__item-text {
+    margin-bottom: 20px;
+    max-width: 372px;
+  }
+
+  &__item-btn {
+    position: absolute;
+    right: 0;
+    bottom: -65px;
+  }
+
+  .swiper-pagination {
+    bottom: 50px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 53px;
+    height: 4px;
+    border-radius: 0;
+    background-color: var(--num);
+    opacity: 1;
+    transition: background-color 0.5s ease;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #7b6152;
+  }
+}

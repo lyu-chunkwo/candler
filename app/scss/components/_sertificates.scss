@@ -1,0 +1,44 @@
+.sertificates {
+  &__text-box {
+    min-width: 370px;
+  }
+
+  &__slider {
+    width: 853px;
+  }
+
+  &__item-img {
+    width: 375px;
+    height: 240px;
+  }
+
+  .slick-dots {
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 55px;
+
+    li {
+      margin-right: 8px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      button {
+        font-size: 0;
+        padding: 0;
+        width: 53px;
+        height: 4px;
+        background-color: var(--num);
+        transition: background-color 0.5s ease;
+      }
+    }
+
+    .slick-active {
+      button {
+        background-color: #7b6152;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.about {
+  background-color: var(--bg);
+  color: var(--white);
+  padding: 50px 0;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__content {
+    min-width: 370px;
+    margin-right: 110px;
+  }
+
+  &__title {
+    color: var(--white);
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    p {
+      margin-bottom: 15px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 0 48px 110px;
+    min-width: 820px;
+    @extend %decor;
+  }
+
+  &__img {
+    margin-bottom: 10px;
+  }
+
+  &__item-text {
+    font-size: 11px;
+  }
+}

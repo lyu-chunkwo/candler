@@ -1,0 +1,43 @@
+.stages {
+  padding-top: 150px;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 370px);
+    gap: 70px 25px;
+    padding-bottom: 70px;
+    @extend %decor;
+    counter-reset: number;
+  }
+
+  &__item {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    position: relative;
+
+    &::before {
+      content: "0" counter(number);
+      position: absolute;
+      counter-increment: number;
+      bottom: 0;
+      font-size: 30px;
+      color: var(--num);
+      @extend %yeseva-400;
+    }
+
+    &:nth-child(n + 10)::before {
+      content: counter(number);
+    }
+
+    &--even {
+      &::before {
+        right: 0;
+      }
+    }
+  }
+
+  &__item-text {
+    width: 174px;
+  }
+}

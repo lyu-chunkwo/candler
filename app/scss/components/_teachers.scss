@@ -1,0 +1,40 @@
+.teachers {
+  padding: 60px 0 83px;
+  background-color: var(--bg);
+  color: var(--white);
+
+  &__title {
+    color: var(--white);
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: 320px;
+    position: relative;
+  }
+
+  &__item-text {
+    position: absolute;
+    width: 162px;
+    text-align: center;
+    background-color: var(--about-line);
+    padding: 14px 8px 15px;
+    right: 0;
+    bottom: 8px;
+  }
+
+  &__name {
+    font-size: 12px;
+    @extend %yeseva-400;
+  }
+
+  &__descr {
+    font-size: 11px;
+  }
+}

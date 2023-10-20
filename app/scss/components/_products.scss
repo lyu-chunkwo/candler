@@ -1,0 +1,50 @@
+.products,
+.courses {
+  padding: 150px 0 0;
+
+  &__list-box {
+    max-width: 765px;
+    padding: 0 45px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px;
+    padding-bottom: 70px;
+    @extend %decor;
+
+    &::before {
+      left: -45px;
+    }
+
+    &::after {
+      left: -23px;
+    }
+  }
+
+  &__item {
+    width: 290px;
+    text-align: center;
+  }
+
+  &__img {
+    width: 274px;
+    margin: 0 auto 8px;
+  }
+
+  &__price {
+    @extend %yeseva-400;
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  &__name {
+    @extend %yeseva-400;
+    margin-bottom: 16px;
+  }
+
+  &__descr {
+    margin-bottom: 25px;
+  }
+}
